@@ -1,0 +1,122 @@
+// Encryption Scramble:
+        encryptCube = rotate.f(rotate.f(rotate.f(encryptCube)));
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+        encryptCube = rotate.f(rotate.f(rotate.f(encryptCube)));
+        encryptCube = rotate.l(encryptCube);
+        encryptCube = rotate.l(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.f(encryptCube);
+        encryptCube = rotate.f(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.d(rotate.d(rotate.d(encryptCube)));
+        encryptCube = rotate.b(encryptCube);
+        encryptCube = rotate.b(encryptCube);
+        encryptCube = rotate.l(encryptCube);
+        encryptCube = rotate.l(encryptCube);
+        encryptCube = rotate.d(rotate.d(rotate.d(encryptCube)));
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.d(encryptCube);
+        encryptCube = rotate.f(rotate.f(rotate.f(encryptCube)));
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.d(rotate.d(rotate.d(encryptCube)));
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.b(rotate.b(rotate.b(encryptCube)));
+
+// Display in a matrix
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 18; j++){
+                if (j ==17){
+                    testMatrix += "[" + encryptCube[i][j] + "]\n";
+                } else {
+                    testMatrix += "[" + encryptCube[i][j] + "] ";
+                }
+            }
+        }
+        System.out.println(testMatrix);
+
+// Decryption process:
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.b(rotate.b(rotate.b(encryptCube)));
+        encryptCube = rotate.l(rotate.l(rotate.l(encryptCube)));
+        encryptCube = rotate.d(rotate.d(rotate.d(encryptCube)));
+
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.d(encryptCube);
+        encryptCube = rotate.d(encryptCube);
+        encryptCube = rotate.l(rotate.l(rotate.l(encryptCube)));
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.l(encryptCube);
+        encryptCube = rotate.d(encryptCube);
+        encryptCube = rotate.d(encryptCube);
+
+        encryptCube = rotate.l(encryptCube);
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.l(rotate.l(rotate.l(encryptCube)));
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.l(rotate.l(rotate.l(encryptCube)));
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.l(encryptCube);
+
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.b(rotate.b(rotate.b(encryptCube)));
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.b(encryptCube);
+        encryptCube = rotate.b(encryptCube);
+        encryptCube = rotate.l(rotate.l(rotate.l(encryptCube)));
+        encryptCube = rotate.b(rotate.b(rotate.b(encryptCube)));
+        encryptCube = rotate.l(encryptCube);
+
+        encryptCube = rotate.f(encryptCube);
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+        encryptCube = rotate.f(rotate.f(rotate.f(encryptCube)));
+
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+        encryptCube = rotate.f(rotate.f(rotate.f(encryptCube)));
+        encryptCube = rotate.l(encryptCube);
+        encryptCube = rotate.f(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.f(rotate.f(rotate.f(encryptCube)));
+        encryptCube = rotate.l(rotate.l(rotate.l(encryptCube)));
+        encryptCube = rotate.f(encryptCube);
+
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
+        encryptCube = rotate.d(encryptCube);
+        encryptCube = rotate.r(rotate.r(rotate.r(encryptCube)));
+        encryptCube = rotate.u(encryptCube);
+        encryptCube = rotate.r(encryptCube);
+        encryptCube = rotate.d(rotate.d(rotate.d(encryptCube)));
+
+        encryptCube = rotate.u(rotate.u(rotate.u(encryptCube)));
